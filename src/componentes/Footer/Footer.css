@@ -1,0 +1,26 @@
+.footer {
+    background-color: #ffc0cb; /* color de fondo */
+    color: #000000;             /* color de texto */
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    margin-top: auto;           /* fuerza al footer a quedar al final */
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer a {
+    color: #000000;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.footer a:hover {
+    color: #646cff;
+}

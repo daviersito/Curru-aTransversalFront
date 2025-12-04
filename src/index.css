@@ -1,0 +1,133 @@
+:root {
+  /* 🎨 Paleta de colores suaves tipo heladería */
+  --color-primario: #f6a5c0;   /* rosa claro */
+  --color-secundario: #fff4e0; /* crema */
+  --color-acento: #b8e1c6;     /* verde menta */
+  --color-texto: #3b3b3b;
+  --color-link: #d87aa1;
+  --color-link-hover: #b65f87;
+
+  font-family: 'Poppins', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  line-height: 1.6;
+  font-weight: 400;
+  color: var(--color-texto);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* 🔗 Enlaces */
+a {
+  font-weight: 500;
+  color: var(--color-link);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+a:hover {
+  color: var(--color-link-hover);
+}
+
+/* 🌸 Fondo general */
+body {
+  background: linear-gradient(180deg, #fff4e0 0%, #fde2e4 100%);
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+}
+
+/* 🏷️ Títulos */
+h1, h2, h3 {
+  color: var(--color-primario);
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-top: 1.5rem;
+}
+
+/* 🧁 Botones */
+button {
+  border-radius: 12px;
+  border: none;
+  padding: 0.6em 1.4em;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: inherit;
+  background-color: var(--color-primario);
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--color-link-hover);
+  transform: translateY(-2px);
+}
+
+/* 🧊 Tarjetas de productos */
+.card {
+  border-radius: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+  border-radius: 20px 20px 0 0;
+}
+
+/* 💬 Footer */
+footer {
+  background-color: var(--color-primario);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 3rem;
+  font-size: 0.9rem;
+}
+
+/* 🚫 Mantengo tu carrusel y flechas exactamente igual */
+.carousel-item img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  margin: auto;
+}
+
+.carousel-inner,
+.carousel-item {
+  height: 300px;
+}
+
+.carousel-item p {
+  color: white;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.carousel-control-prev {
+  left: 50px;
+}
+
+.carousel-control-next {
+  right: 50px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  top: 30%;
+  transform: translateY(200%);
+  width: 60px;
+  height: 60px;
+}

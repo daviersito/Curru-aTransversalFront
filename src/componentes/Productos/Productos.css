@@ -1,0 +1,116 @@
+
+/* Contenedor principal */
+.mi-tabla {
+    margin-top: 50px;
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* Input de búsqueda */
+.mi-tabla .form-control {
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: 1px solid #ced4da;
+    transition: all 0.3s ease;
+}
+
+.mi-tabla .form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+/* Botones */
+.mi-tabla .btn {
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 13px;
+    transition: all 0.3s ease;
+}
+
+.mi-tabla .btn-outline-dark:hover {
+    background-color: #343a40;
+    color: #fff;
+}
+
+.mi-tabla .btn-outline-primary:hover {
+    background-color: #0d6efd;
+    color: #fff;
+}
+
+.mi-tabla .btn-outline-danger:hover {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.mi-tabla .btn-outline-secondary:hover {
+    background-color: #6c757d;
+    color: #fff;
+}
+
+/* Tabla */
+.mi-tabla table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 8px;
+}
+
+.mi-tabla thead tr {
+    background-color: #f1f3f5;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+.mi-tabla tbody tr {
+    background-color: #ffffff;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.mi-tabla tbody tr:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* Celdas */
+.mi-tabla td, .mi-tabla th {
+    vertical-align: middle !important;
+    padding: 12px 10px;
+    text-align: center;
+}
+
+/* Imagen del producto */
+.mi-tabla img {
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/* Badges para stock bajo */
+.badge-stock-bajo {
+    background-color: #dc3545;
+    color: #fff;
+    padding: 3px 6px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+/* Estilos para enlaces de edición y eliminación */
+.enlaceEdit {
+    color: #0d6efd;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.enlaceEdit:hover {
+    text-decoration: underline;
+}
+
+.enlaceDel {
+    color: #dc3545;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.enlaceDel:hover {
+    text-decoration: underline;
+}

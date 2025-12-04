@@ -1,0 +1,114 @@
+/* Contenedor principal */
+.usuarios-tabla-container {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    margin-top: 40px;
+}
+
+/* Título */
+.usuarios-tabla-container h3 {
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* Input de búsqueda */
+.usuarios-tabla-container .form-control {
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: 1px solid #ced4da;
+    transition: all 0.3s ease;
+}
+
+.usuarios-tabla-container .form-control:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 5px rgba(13, 110, 253, 0.3);
+}
+
+/* Botones */
+.usuarios-tabla-container .btn {
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 13px;
+    transition: all 0.3s ease;
+}
+
+.usuarios-tabla-container .btn-outline-dark:hover {
+    background-color: #343a40;
+    color: #fff;
+}
+
+.usuarios-tabla-container .btn-outline-primary:hover {
+    background-color: #0d6efd;
+    color: #fff;
+}
+
+.usuarios-tabla-container .btn-outline-danger:hover {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.usuarios-tabla-container .btn-outline-secondary:hover {
+    background-color: #6c757d;
+    color: #fff;
+}
+
+/* Tabla */
+.usuarios-tabla-container table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 8px;
+}
+
+.usuarios-tabla-container thead tr {
+    background-color: #f1f3f5;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+.usuarios-tabla-container tbody tr {
+    background-color: #ffffff;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.usuarios-tabla-container tbody tr:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+}
+
+/* Filas inactivas */
+.usuario-inactivo {
+    opacity: 0.6;
+    background-color: #f8f9fa;
+}
+
+/* Celdas */
+.usuarios-tabla-container td, .usuarios-tabla-container th {
+    vertical-align: middle !important;
+    padding: 12px 10px;
+    text-align: center;
+}
+
+/* Badges */
+.badge {
+    font-size: 12px;
+    padding: 6px 10px;
+    border-radius: 8px;
+}
+
+/* Hover para enlaces de edición y eliminación */
+.usuarios-tabla-container .btn-sm {
+    font-weight: 500;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .usuarios-tabla-container table {
+        font-size: 12px;
+    }
+    .usuarios-tabla-container .form-control {
+        margin-bottom: 10px;
+    }
+}

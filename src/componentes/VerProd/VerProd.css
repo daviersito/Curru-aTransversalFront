@@ -1,0 +1,23 @@
+
+
+
+
+
+
+
+.card {
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* sombra suave por defecto */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* transición suave */
+}
+
+.card-title {
+  color: #333;
+  font-weight: 600;
+}
+
+/* Hover: levantar card y sombra más fuerte */
+.card:hover {
+  transform: translateY(-8px) scale(1.03); /* sube y se hace ligeramente más grande */
+  box-shadow: 0 12px 25px rgba(0,0,0,0.2); /* sombra más marcada */
+}
