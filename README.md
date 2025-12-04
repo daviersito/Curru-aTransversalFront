@@ -1,43 +1,54 @@
-<<<<<<< HEAD
-# React + Vite
+video explicacion https://youtu.be/3rr8jtxBPiE
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Instalacion y ejecucion backend
+## Construir y ejecutar
+Desde la carpeta demo (PowerShell):
 
-Currently, two official plugins are available:
+powershell
+cd 'c:\Users\dilan\Downloads\corruna back\corruna\demo'
+# Ejecutar la app (usa el wrapper Maven incluido)
+.\mvnw.cmd spring-boot:run
+
+# o compilar empaquetar (sin ejecutar tests):
+.\mvnw.cmd -DskipTests package
 
 
-## React Compiler
+Nota: si Maven falla por "No compiler is provided..." instala/configura un JDK y exporta JAVA_HOME antes de ejecutar.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Expanding the ESLint configuration
+## Swagger / Documentación
+Swagger UI (web): http://localhost:8081/swagger-ui/index.html
+OpenAPI JSON: http://localhost:8081/v3/api-docs
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-=======
-# Curru-aTransversalFront
-frontend curruña
->>>>>>> e7941c0e61335f3d18e3e7f2ead113ff088f6f2d
-# Curru-aTransversalFront
+Abre el navegador con:
 
-Frontend Curruña
+powershell
+Start-Process "http://localhost:8081/swagger-ui/index.html"
 
----
 
-This project was bootstrapped from the React + Vite template. Below is the original template information preserved for reference.
 
-## Template: React + Vite
+## Credenciales de prueba (crear vía API)
+La API permite crear usuarios por POST /api/usuarios y el servicio hashará la contraseña automáticamente. Usa los siguientes JSONs en POST /api/usuarios si aún no tienes usuarios en la base:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Admin (rol ADMIN = id 1):
+json
+{
+  "nombre": "Admin Heladeria",
+  "email": "admin@heladeria.local",
+  "contra": "AdminPass!2025",
+  "estado": true,
+  "fecha_creacion": 20251124,
+  "rol": { "id": 1 }
+}
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-### React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-### Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Cliente (rol CLIENTE = id 2):
+```json
+{
+  "nombre": "Cliente Demo",
+  "email": "cliente@heladeria.local",
+  "contra": "Cliente123!",
+  "estado": true,
+  "fecha_creacion": 20251124,
+  "rol": { "id": 2 }
+}
