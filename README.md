@@ -1,4 +1,4 @@
-video explicacion https://youtu.be/3rr8jtxBPiE
+video explicacion 
 
 Instalacion y ejecucion backend
 ## Construir y ejecutar
